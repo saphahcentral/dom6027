@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ARCHIVES - Derech Olam Ministries Int'l</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+  <script>
+    function loadHTML(id, url) {
+      fetch(url)
+        .then(response => response.text())
+        .then(data => { document.getElementById(id).innerHTML = data; });
+    }
+  </script>
+</head>
+<body>
+
+<!-- Dynamic Header -->
+<div id="header"></div>
+<script>loadHTML("header", "header.html");</script>
+
+<!-- Dynamic Navigation Bar -->
+<div id="nav_bar"></div>
+<script>loadHTML("nav_bar", "nav_bar.html");</script>
+
+<!-- Page Content -->
+<br />
+<h1 style="text-align: center; font-size: x-large; text-decoration: underline;">MESSAGE ARCHIVES</h1>
+<br />
+
+<p style="font-family: Montserrat, sans-serif; font-size: large; text-align: center;">
+  Access previous messages and teachings below:
+</p>
+
+<div style="text-align: center; margin-top: 20px; font-family: Montserrat, sans-serif; font-size: large;">
+  <ul style="list-style-type: none; padding: 0;">
+    <li style="margin: 10px;"><a href="https://bhs2024ministry.blogspot.com/p/archive.html" target="_blank" style="text-decoration: none; color: #2b00fe;">BHS (2023/24)</a></li>
+    <li style="margin: 10px;"><a href="https://lastwarners2024.blogspot.com/p/archive.html" target="_blank" style="text-decoration: none; color: #2b00fe;">Last Warners (2023)</a></li>
+    <li style="margin: 10px;"><a href="https://lastwarners2024.blogspot.com/p/archive-2.html" target="_blank" style="text-decoration: none; color: #2b00fe;">LW (2024)</a></li>
+    <li style="margin: 10px;"><a href="https://lastwarners2024.blogspot.com/p/archive-3.html" target="_blank" style="text-decoration: none; color: #2b00fe;">LW (2025) – until 2025/08/21</a></li>
+    <li style="margin: 10px;"><a href="./archive2025.html" target="_blank" style="text-decoration: none; color: #2b00fe;">DOM (2025) – from 2025/08/22</a></li>
+  </ul>
+</div>
+
+<br /><br /><br />
+
+<!-- Dynamic Footer -->
+<div id="footer"></div>
+<script>loadHTML("footer", "footer.html");</script>
+
+</body>
+</html>

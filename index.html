@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Derech Olam Ministries Int'l</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Montserrat, sans-serif; margin: 0; padding: 0; }
+    table { border-collapse: collapse; border: 2px solid black; margin-top: 10px; width: 100%; }
+    nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<!-- Header dynamically loaded -->
+<div id="header-placeholder"></div>
+
+<!-- Navbar dynamically loaded -->
+<div id="nav-placeholder"></div>
+
+<!-- MAIN CONTENT -->
+<table>
+  <tbody>
+    <tr>
+      <td colspan="2" style="background-color: #fcff01; border-bottom: 2px solid black; font-size: 1.25rem; font-weight: bold; padding: 10px; text-align: center;">
+        DERECH OLAM MINISTRIES INT'L
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center; vertical-align: top; width: 40%;">
+        <img alt="Derech Olam Ministries Logo" height="84" src="https://cdn-images.imagevenue.com/2e/f7/82/ME1AW7FV_o.jpg" style="border: 2px solid black;" width="84" />
+      </td>
+      <td style="color: #c00; font-family: 'Amatic SC', cursive; font-size: 1rem; padding: 10px; vertical-align: top; width: 60%;">
+        <p>Looking for a ministry that proclaims the TRUE God (YHVH) and Savior (Yahusha), adhering strictly to the Scriptures?</p>
+        <p>Are you a TRUTH SEEKER? <b>Derech Olam Ministries Int'l is here for you!</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding: 10px; text-align: center;">
+        <span style="background-color: #fcff01; border: 2px solid rgb(56, 118, 29); display: inline-block; font-size: large; font-weight: bold; padding: 12px 24px; color: #2b00fe;">
+          📌 BOOKMARK THIS PAGE!
+        </span>
+        <p style="font-size: x-small; margin-top: 5px;">Stay updated with Derech Olam Ministries Int'l and DOTS services.</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="font-family: Montserrat, sans-serif; font-size: 1rem; padding: 10px; text-align: center;">
+        Derech Olam Ministries Int'l is an online ministry proclaiming the original message of the Torah and Scriptures. We warn the world about the End Times that are already here. <b>We are NOT affiliated with any other church group.</b>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br /><br />
+
+<p style="text-align: center; font-weight: bold;">Subscribe now to receive updates and access to our training services (DOTS)!</p>
+
+<!-- Footer dynamically loaded -->
+<div id="footer-placeholder"></div>
+
+<!-- Dynamic inclusion scripts -->
+<script>
+  // Load header
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('header-placeholder').innerHTML = data);
+
+  // Load navbar
+  fetch('nav_bar.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+
+  // Load footer
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
+
+</body>
+</html>

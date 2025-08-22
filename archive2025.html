@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM 2025 Archives - Derech Olam Ministries Int'l</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+  <script>
+    function loadHTML(id, url) {
+      fetch(url)
+        .then(response => response.text())
+        .then(data => { document.getElementById(id).innerHTML = data; });
+    }
+  </script>
+</head>
+<body>
+
+<!-- Dynamic Header -->
+<div id="header"></div>
+<script>loadHTML("header", "header.html");</script>
+
+<!-- Dynamic Navigation Bar -->
+<div id="nav_bar"></div>
+<script>loadHTML("nav_bar", "nav_bar.html");</script>
+
+<!-- Page Content -->
+<br />
+<div style="text-align: center;">
+  <a href="https://cdn-images.imagevenue.com/77/b8/bd/ME1AW9PE_o.jpg" style="margin: 1em;">
+    <img src="https://cdn-images.imagevenue.com/77/b8/bd/ME1AW9PE_o.jpg" width="200" height="200" alt="Index" />
+  </a>
+</div>
+
+<h2 style="text-align: center;"><u>COMPLETE ARCHIVE OF DOM MESSAGES (2025)</u></h2>
+
+<p style="font-family: Montserrat, sans-serif; font-size: large;">
+  <b>Here is a list of all our services in 2025. Scroll down to find messages for each month.</b>
+</p>
+
+<p style="color: red; font-family: Montserrat, sans-serif; font-size: medium;">
+  If any of the links are empty, it means the messages have not yet been uploaded. This list will be updated every first Shabbat of the month.
+</p>
+
+<!-- Monthly Placeholders -->
+<h3><u>AUGUST 2025</u></h3>
+<ul>
+  <li>Messages will be added here...</li>
+</ul>
+
+<h3><u>SEPTEMBER 2025</u></h3>
+<ul>
+  <li>Messages will be added here...</li>
+</ul>
+
+<h3><u>OCTOBER 2025</u></h3>
+<ul>
+  <li>Messages will be added here...</li>
+</ul>
+
+<h3><u>NOVEMBER 2025</u></h3>
+<ul>
+  <li>Messages will be added here...</li>
+</ul>
+
+<h3><u>DECEMBER 2025</u></h3>
+<ul>
+  <li>Messages will be added here...</li>
+</ul>
+
+<br /><br /><br /><br /><br /><br /><br />
+
+<!-- Dynamic Footer -->
+<div id="footer"></div>
+<script>loadHTML("footer", "footer.html");</script>
+
+</body>
+</html>

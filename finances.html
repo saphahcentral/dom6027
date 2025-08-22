@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FINANCES - Derech Olam Ministries Int'l</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+  <script>
+    function loadHTML(id, url) {
+      fetch(url)
+        .then(response => response.text())
+        .then(data => { document.getElementById(id).innerHTML = data; });
+    }
+  </script>
+</head>
+<body>
+
+<!-- Dynamic Header -->
+<div id="header"></div>
+<script>loadHTML("header", "header.html");</script>
+
+<!-- Dynamic Navigation Bar -->
+<div id="nav_bar"></div>
+<script>loadHTML("nav_bar", "nav_bar.html");</script>
+
+<!-- Page Content -->
+<br />
+<div class="separator" style="clear: both; margin-left: 1em; margin-right: 1em; text-align: center;">
+  <a href="https://cdn-images.imagevenue.com/7e/5b/40/ME1AW9PD_o.jpg">
+    <img border="2" height="125" src="https://cdn-images.imagevenue.com/7e/5b/40/ME1AW9PD_o.jpg" width="200" />
+  </a>
+</div>
+<br />
+
+<h1 style="font-size: x-large; text-align: center;"><strong>FINANCIAL SUPPORT</strong></h1>
+
+<p style="font-size: large;">We are grateful to all who support this ministry through your tithes, offerings, and donations. Suggested minimum is $10, but you may donate any amount.</p>
+
+<div style="text-align: center; margin: 20px 0px;">
+  <h2 style="font-family: Montserrat, sans-serif;">Support Derech Olam Ministries Int'l</h2>
+
+  <!-- Tithes Button -->
+  <a href="https://paypal.me/swdb2018" target="_blank" style="display: inline-block; margin: 10px; text-decoration: none;">
+    <button style="background-color: gold; border: 2px solid #0033cc; border-radius: 8px; color: #0033cc; font-size: large; font-weight: bold; padding: 12px 24px;">
+      GIVE TITHES
+    </button>
+  </a>
+
+  <!-- Offerings Button -->
+  <a href="https://paypal.me/swdb2018" target="_blank" style="display: inline-block; margin: 10px; text-decoration: none;">
+    <button style="background-color: gold; border: 2px solid #0033cc; border-radius: 8px; color: #0033cc; font-size: large; font-weight: bold; padding: 12px 24px;">
+      GIVE OFFERING
+    </button>
+  </a>
+
+  <!-- Donations Button -->
+  <a href="https://paypal.me/swdb2018" target="_blank" style="display: inline-block; margin: 10px; text-decoration: none;">
+    <button style="background-color: gold; border: 2px solid #0033cc; border-radius: 8px; color: #0033cc; font-size: large; font-weight: bold; padding: 12px 24px;">
+      GIVE DONATION
+    </button>
+  </a>
+</div>
+
+<br /><br />
+
+<!-- Dynamic Footer -->
+<div id="footer"></div>
+<script>loadHTML("footer", "footer.html");</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Derech Olam Internal Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Montserrat, sans-serif; margin: 0; padding: 0; text-align: center; }
+    h1 { margin-top: 20px; color: #c00; }
+    ul { list-style-type: none; padding: 0; margin-top: 30px; }
+    li { margin: 15px 0; }
+    a.button {
+      display: inline-block;
+      background-color: #fcff01;
+      border: 2px solid #38761d;
+      color: #2b00fe;
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    a.button:hover { background-color: #e5e500; }
+  </style>
+</head>
+<body>
+
+<!-- Header dynamically loaded -->
+<div id="header-placeholder"></div>
+
+<!-- Navbar dynamically loaded -->
+<div id="nav-placeholder"></div>
+
+<h1>Derech Olam Ministries Int'l - Internal Menu</h1>
+
+<ul>
+  <li><a class="button" href="about.html">Derech Olam Ministries Int'l</a></li>
+  <li><a class="button" href="https://saphahcentral.github.io/dots6027/index.html" target="_blank">Derech Olam Training Services (DOTS)</a></li>
+  <li><a class="button" href="https://saphahcentral.github.io/dows6027/index.html" target="_blank">Derech Olam Warning Services</a></li>
+  <li><a class="button" href="https://t.me/dom6027channel" target="_blank">Telegram Channel</a></li>
+  <li><a class="button" href="https://www.facebook.com/dom6027.page" target="_blank">Facebook Page</a></li>
+  <li><a class="button" href="https://chat.whatsapp.com/FpI6Px40Jil5t6Vi9ksjcS" target="_blank">WhatsApp Group</a></li>
+</ul>
+
+<!-- Footer dynamically loaded -->
+<div id="footer-placeholder"></div>
+
+<!-- Dynamic inclusion scripts -->
+<script>
+  // Load header
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('header-placeholder').innerHTML = data);
+
+  // Load navbar
+  fetch('nav_bar.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+
+  // Load footer
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
+
+</body>
+</html>

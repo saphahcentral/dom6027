@@ -4,12 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Derech Olam Ministries Int'l">
+  <meta name="description" content="Derech Olam Ministries Int'l – walking the Eternal Path, the Ancient Way of YHVH. Discover truth, light, and preparation for the days ahead.">
   <meta name="author" content="Derech Olam Ministries">
-  <title>Derech Olam Ministries Int'l - INDEX</title>
+  <title>Derech Olam Ministries Int'l – The Eternal Path</title>
   <link rel="stylesheet" href="https://saphahcentral.github.io/saphah/style-public.css">
+
   <style>
-    header, section, footer { padding: 20px; }
+    section { padding: 20px; }
+    .hero {
+      background: linear-gradient(to right, #2b00fe, #4a90e2);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h1 { font-size: 2rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.1rem; margin: 0 auto; max-width: 700px; }
+
+    .mission {
+      text-align: center;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f5f5f5;
+      border-radius: 12px;
+    }
+    .mission h2 { font-size: 1.6rem; margin-bottom: 15px; }
+    .mission p { font-size: 1rem; line-height: 1.6; margin-bottom: 12px; }
+
+    .highlight {
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fffef3;
+      border: 1px solid #d8d8d8;
+    }
+    .highlight h2 { margin-bottom: 10px; font-size: 1.6rem; color: #2b00fe; }
+    .highlight p { margin-bottom: 20px; font-size: 1rem; color: #000; }
+
     .cta-button {
       background: #fcff01;
       color: #2b00fe;
@@ -19,81 +52,42 @@
       border-radius: 8px;
       text-decoration: none;
       display: inline-block;
+      transition: background 0.2s ease-in-out;
     }
     .cta-button:hover { background: #fff86c; }
-    .highlight {
-      background: #f5f5f5;
-      text-align: center;
-      padding: 40px 20px;
-      border-radius: 12px;
-    }
-    .highlight h2 { margin-bottom: 10px; font-size: 1.6rem; }
-    .highlight p { margin-bottom: 20px; font-size: 1rem; }
-    .hero {
-      background: linear-gradient(to right, #2b00fe, #4a90e2);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-    .hero h1 { font-size: 2rem; margin-bottom: 10px; }
-    .hero p { font-size: 1.1rem; margin-bottom: 0; }
-    .mission {
-      text-align: center;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-    .mission h2 { font-size: 1.5rem; margin-bottom: 10px; }
-    .mission p { font-size: 1rem; }
   </style>
+
+  <!-- Public include loader -->
+  <script src="https://saphahcentral.github.io/saphah/includes-public.js" defer></script>
 </head>
 <body>
 
-<!-- Header dynamically loaded -->
+<!-- Header / Nav / Footer placeholders -->
 <div id="header-placeholder"></div>
-
-<!-- Navbar dynamically loaded -->
 <div id="nav-placeholder"></div>
-
-<!-- HIGHLIGHT BOX (TOP PRIORITY CTA) -->
-<section class="highlight">
-  <h2>📌 Join Derech Olam Ministries Google Group</h2>
-  <p>Be notified of our <strong>Daily Davar Lechem (Word Bread) Messages</strong> and <strong>Shabbat Messages</strong>, as well as other important updates — directly by email.</p>
-  <a class="cta-button" href="https://groups.google.com/g/lastwarners2024" target="_blank">➡️ Join Now</a>
-</section>
 
 <!-- HERO SECTION -->
 <section class="hero">
   <h1>Derech Olam Ministries Int'l</h1>
-  <p>Proclaiming the original Torah message and preparing the world for the End Times.</p>
+  <p>Walking the <strong>Eternal Path</strong> — the <strong>Ancient Way of YHVH</strong> — and preparing hearts for the soon return of the Messiah.</p>
 </section>
 
 <!-- MISSION STATEMENT -->
 <section class="mission">
-  <h2>Our Calling</h2>
-  <p>We are an online ministry dedicated to teaching the truth of the Scriptures and sounding the alarm for the days we are living in. <strong>We are not affiliated with any denomination or church group.</strong></p>
+  <h2>Our Mission – Walking the Ancient Way</h2>
+  <p>Derech Olam means <em>“The Eternal Path.”</em> We walk this path with reverence for the Torah, the Prophets, and the words of our Messiah — seeking the pure truth of YHVH beyond tradition, confusion, or man-made religion.</p>
+  <p>Here, you’ll find teaching, warning, and encouragement for all who hunger for righteousness and long to understand the times we’re living in. We are not a denomination or a church — we are a <strong>remnant calling</strong> for hearts to return to the covenant ways of our Elohim.</p>
+  <p>If your heart is stirring to seek truth, you’ve found your place among those walking the narrow and ancient road that leads to life. 🌿</p>
 </section>
 
-<!-- Footer dynamically loaded -->
+<!-- CTA HIGHLIGHT -->
+<section class="highlight">
+  <h2>📩 Stay Connected on the Path</h2>
+  <p>Receive our <strong>Daily Davar Lechem (Word Bread)</strong> messages, <strong>Shabbat teachings</strong>, and prophetic updates straight to your inbox.</p>
+  <a class="cta-button" href="https://groups.google.com/g/lastwarners2024" target="_blank">➡️ Join the Google Group</a>
+</section>
+
 <div id="footer-placeholder"></div>
-
-<!-- Dynamic inclusion scripts -->
-<script>
-  // Load header
-  fetch('header.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('header-placeholder').innerHTML = data);
-
-  // Load navbar
-  fetch('nav_bar.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('nav-placeholder').innerHTML = data);
-
-  // Load footer
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-</script>
 
 </body>
 </html>
